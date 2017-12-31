@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/www'));
  
 app.use(webpackDevMiddleware(compiler, {
   hot: true,
-  filename: './dist/bundle.js',
+  filename: './www/dist/bundle.js',
   publicPath: '/',
   stats: {
     colors: true,

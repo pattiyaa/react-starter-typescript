@@ -1,10 +1,26 @@
-// Remember to rename the file from app.ts to app.tsx
-// and to keep it in the src/ directory.
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import Hello from "./greeting";
+import {Provider} from "mobx-react";
+import {RootStore} from "./rootStore";
+import {App} from "./app"
+import 'bootstrap/dist/css/bootstrap.css';
 
+
+const rootStore = RootStore.create({
+  products: {
+        "1":{
+          name: "strawberry"
+        }
+  }
+});
+
+
+const router =(
+    <Provider >
+        <App store={rootStore} />
+    </Provider>
+);
 ReactDOM.render(
-  <Hello name="Willson" />,
+  router,
   document.getElementById("root")
 );
