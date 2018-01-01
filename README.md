@@ -1,9 +1,9 @@
 React Boilerplate
-React + mobx-state-tree + typescript + styled-component
 ---
  
-Welcome.
- 
+Feelfree to start your react project from this ready made project, if you wanna use these tools below. 
+It can save a lot of yourtime
+React + mobx-state-tree + typescript + styled-component
  
  
 Usage
